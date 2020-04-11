@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|x64">
+      <Configuration>Template</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CmpRapCore.c" />
+    <ClCompile Include="CmpDriver.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CmpDriver.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VersionR.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectName>CmpRapCore</ProjectName>
+    <ProjectGuid>{58E0B799-2361-FB45-F41C-36F356B5C0D8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Temp\Debug\</OutDir>
+    <IntDir>.\Temp\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.sys</TargetExt>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>.\Temp\Debug\</OutDir>
+    <IntDir>.\Temp\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.sys</TargetExt>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>.;..;%WinDDK%\7600.16385.1\inc\crt;%WinDDK%\7600.16385.1\inc\api;%WinDDK%\7600.16385.1\inc\ddk;..\..\..\Components;..\..\..\Platforms\3srte3\3srte3\sys;..\..\..\Platforms\3srte3\3srte3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>RTS_NO_STDINT_H;_DDK_DRIVER_;_NTDDK_INCLUDED;_NTHAL_;_DEBUG;_X86_;i386;STD_CALL;CONDITION_HANDLING;WIN32_LEAN_AND_MEAN;NT_UP;RDRDBG;SRVDBG;DBG;_IDWBUILD;WIN32;DYNAMIC_LINK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>NT_INST;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AssemblerListingLocation>.\Temp\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Temp\Debug\CmpDriver.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Temp\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Temp\Debug\</ProgramDataBaseFileName>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <CallingConvention>StdCall</CallingConvention>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy .\Temp\debug\*.sys .\Export
+editbin /SECTION:.text,!p /SECTION:.data,!p /SECTION:.rdata,!p /SECTION:.gdat,!p .\export\CmpRapCore.sys
+
+copy .\export\*.sys %SystemRoot%\system32\drivers</Command>
+    </PostBuildEvent>
+    <Midl>
+      <TypeLibraryName>.\Temp\Debug\CmpDriver.tlb</TypeLibraryName>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>__USERMODE_INCLUDE__;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\Components;..\..\..\Platforms\3SRTE3\3SRTE3;..\..\..\Platforms\3SRTE3\3SRTE3\Sys</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Temp\Debug\CmpDriver.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Native</SubSystem>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>.\Temp\debug\CmpRapCore.sys</OutputFile>
+      <MergeSections>.bss=.gdat</MergeSections>
+      <BaseAddress>0x10000</BaseAddress>
+      <AdditionalDependencies>%WinDDK%\7600.16385.1\lib\wxp\i386\bufferoverflowK.lib;%WinDDK%\7600.16385.1\lib\wxp\i386\hal.lib;%WinDDK%\7600.16385.1\lib\wxp\i386\ntoskrnl.lib;%WinDDK%\7600.16385.1\lib\wxp\i386\libcntpr.lib</AdditionalDependencies>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <Version>1.25</Version>
+      <EntryPointSymbol>DriverEntry%408</EntryPointSymbol>
+      <Driver>Driver</Driver>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>.;..;%WinDDK%\7600.16385.1\inc\crt;%WinDDK%\7600.16385.1\inc\api;%WinDDK%\7600.16385.1\inc\ddk;..\..\..\Components;..\..\..\Platforms\3srte3\3srte3\sys;..\..\..\Platforms\3srte3\3srte3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_AMD64_;_DDK_DRIVER_;_NTDDK_INCLUDED_;RTS_NO_STDINT_H;NO_STRICT;_DEBUG;CONDITION_HANDLING;NT_UP;RDRDBG;SRVDBG;DBG;_IDWBUILD;NO_CST_DEBUG;SYSFLASH_NOTIMPLEMENTED;PATHS_RELATIVE;CAALib;RTS_UNICODE;CAA_RSM_FAST_CHECK;SYSINTERNALLIB_ENABLE_PARAMETERCHECK;CMPSIL2_NOTIMPLEMENTED;CMPMONITOR2_NOTIMPLEMENTED;WIN32;_WIN32;_NTHAL_;_CRT_SECURE_NO_WARNINGS;DYNAMIC_LINK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>NT_INST;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AssemblerListingLocation>.\Temp\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Temp\Debug\CmpDriver.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Temp\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Temp\Debug\</ProgramDataBaseFileName>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <CallingConvention>StdCall</CallingConvention>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy .\Temp\debug\*.sys .\Export
+editbin /SECTION:.text,!p /SECTION:.data,!p /SECTION:.rdata,!p /SECTION:.gdat,!p .\export\CmpRapCore.sys
+
+copy .\export\*.sys %SystemRoot%\system32\drivers</Command>
+    </PostBuildEvent>
+    <Midl>
+      <TypeLibraryName>.\Temp\Debug\CmpDriver.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>__USERMODE_INCLUDE__;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\Components;..\..\..\Platforms\3SRTE3\3SRTE3;..\..\..\Platforms\3SRTE3\3SRTE3\Sys</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Temp\Debug\CmpDriver.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Native</SubSystem>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>.\Temp\debug\CmpRapCore.sys</OutputFile>
+      <MergeSections>.bss=.gdat</MergeSections>
+      <BaseAddress>0x10000</BaseAddress>
+      <AdditionalDependencies>%WinDDK%\7600.16385.1\lib\Win7\amd64\bufferoverflowK.lib;%WinDDK%\7600.16385.1\lib\Win7\amd64\libcntpr.lib;%WinDDK%\7600.16385.1\lib\Win7\amd64\hal.lib;%WinDDK%\7600.16385.1\lib\Win7\amd64\ntoskrnl.lib</AdditionalDependencies>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <Version>1.25</Version>
+      <EntryPointSymbol>DriverEntry</EntryPointSymbol>
+      <Driver>Driver</Driver>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
